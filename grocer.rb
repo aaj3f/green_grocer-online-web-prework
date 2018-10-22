@@ -1,9 +1,6 @@
 require 'pry'
 
 def consolidate_cart(cart)
-  #an array of hashes, each key is an item with a hash as a variable
-  #each hash has attribute keys and values
-  #creating a hash with items as keys values are hashes
   new_hash = Hash.new
   cart.each do |item_hash|
     item_hash.each do |item_name, att_hash|
